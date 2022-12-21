@@ -1,0 +1,140 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>Twitter</servlet-name>
+        <servlet-class>twitter.twitterCtrl</servlet-class>
+    </servlet>
+    
+    
+    
+    
+    
+    
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>twitter.loginCtrl</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Profile</servlet-name>
+        <servlet-class>twitter.profileCtrl</servlet-class>
+    </servlet>
+    <!--  -->
+    <servlet>
+        <servlet-name>profileCtrl</servlet-name>
+        <servlet-class>twitter.profileCtrl</servlet-class>
+    </servlet>
+    <!--  -->
+    <servlet>
+        <servlet-name>GetImage</servlet-name>
+        <servlet-class>twitter.getImageCtrl</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Upload</servlet-name>
+        <servlet-class>twitter.uploadCtrl</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>mainMenuCntr</servlet-name>
+        <servlet-class>twitter.mainMenuCtrl</servlet-class>
+    </servlet>
+    <!--  -->
+    <servlet>
+        <servlet-name>mainMenuCtrl</servlet-name>
+        <servlet-class>twitter.mainMenuCtrl</servlet-class>
+    </servlet>
+    <!--  -->
+        <!--  -->
+    <servlet>
+        <servlet-name>viewUserTweetsCtrl</servlet-name>
+        <servlet-class>twitter.viewUserTweetsCtrl</servlet-class>
+    </servlet>
+    <!--  -->
+    
+    
+    
+    <!--  -->
+    <servlet>
+        <servlet-name>loginCtrl</servlet-name>
+        <servlet-class>twitter.loginCtrl</servlet-class>
+    </servlet>
+    <!--  -->
+    <servlet>
+        <servlet-name>createTweetCtrl</servlet-name>
+        <servlet-class>twitter.createTweetCtrl</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>followUnfollowTweetsCtrl</servlet-name>
+        <servlet-class>twitter.followUnfollowTweetsCtrl</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>viewAUserTweetsCtrl</servlet-name>
+        <servlet-class>twitter.viewAUserTweetsCtrl</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>homePageCtrl</servlet-name>
+        <servlet-class>twitter.homePageCtrl</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Twitter</servlet-name>
+        <url-pattern>/Twitter</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+    <!--  -->
+    <servlet-mapping>
+        <servlet-name>loginCtrl</servlet-name>
+        <url-pattern>/loginCtrl</url-pattern>
+    </servlet-mapping>
+    <!--  -->
+    <servlet-mapping>
+        <servlet-name>Profile</servlet-name>
+        <url-pattern>/Profile</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>profileCtrl</servlet-name>
+        <url-pattern>/profileCtrl</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetImage</servlet-name>
+        <url-pattern>/GetImage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Upload</servlet-name>
+        <url-pattern>/Upload</url-pattern>
+    </servlet-mapping>
+    <!--
+    <servlet-mapping>
+        <servlet-name>mainMenuCntr</servlet-name>
+        <url-pattern>/mainMenuCntr</url-pattern>
+    </servlet-mapping>
+     -->
+    <!--                      -->
+    <servlet-mapping>
+        <servlet-name>mainMenuCtrl</servlet-name>
+        <url-pattern>/mainMenuCtrl</url-pattern>
+    </servlet-mapping>
+    <!--                      -->
+    <servlet-mapping>
+        <servlet-name>createTweetCtrl</servlet-name>
+        <url-pattern>/createTweetCtrl</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>followUnfollowTweetsCtrl</servlet-name>
+        <url-pattern>/followUnfollowTweetsCtrl</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>viewAUserTweetsCtrl</servlet-name>
+        <url-pattern>/viewAUserTweetsCtrl</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>homePageCtrl</servlet-name>
+        <url-pattern>/homePageCtrl</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
